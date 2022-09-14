@@ -1,60 +1,80 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title> SignUp Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="singup.css">
 </head>
 
-<body align="center">
-    <h1> CREATE YOUR ACCOUNT</h1>
-    <table cellspacing="2" align="center" cellpadding="8" border="0">
-        <tr>
-            <td> Name</td>
-            <td><input type="text" placeholder="Enter your name" id="n1"></td>
-        </tr>
-        <tr>
-            <td>Email </td>
-            <td><input type="text" placeholder="Enter your email id" id="e1"></td>
-        </tr>
-        <tr>
-            <td> Set Password</td>
-            <td><input type="password" placeholder="Set a password" id="p1"></td>
-        </tr>
-        <tr>
-            <td>Confirm Password</td>
-            <td><input type="password" placeholder="Confirm your password" id="p2"></td>
-        </tr>
-        <tr>
-            <td>
-                <input type="submit" value="Create" onClick="create_account()" />
-    </table>
-    <script type="text/javascript">
+<body>
+    <div class="split left">
+
+        <div class="centered1">
+            <h2 style="margin-left: 40px;"> CREATE YOUR ACCOUNT</h2>
+            <table cellspacing="2 " cellpadding="8 ">
+                <tr>
+                    <td> Name</td>
+                    <td><input type="text " placeholder="Enter your name " id="n1 " style="border-radius: 10px; border-color: black;"></td>
+                </tr>
+                <tr>
+                    <td>Email </td>
+                    <td><input type="text " placeholder="Enter your email id " id="e1 " style="border-radius: 10px; border-color: black;"></td>
+                </tr>
+                <tr>
+                    <td> Set Password</td>
+                    <td><input type="password" placeholder="Set a password " id="p1 " style="border-radius: 10px; border-color: black;"></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password" placeholder="Confirm your password " id="p2 " style="border-radius: 10px; border-color: black;"></td>
+                </tr>
+
+                <td><button type="submit" onclick="create_account()" style="margin-left: 150px;"><strong>Create</strong></button></td>
+
+                <!-- <input type="submit" value="create " onClick="create_account() " /> -->
+
+            </table>
+        </div>
+    </div>
+    <div class="split right">
+        <div class="centered">
+            <img src="img/icon book.gif" alt="icon">
+            <h2>CREATE ACCOUNT LEVIN</h2>
+            <h3>Make a batter life with <strong>LEVIN</strong></h3>
+        </div>
+    </div>
+    <script type="text/javascript ">
         function create_account() {
-            var n = document.getElementById("n1").value;
-            var e = document.getElementById("e1").value;
-            var p = document.getElementById("p1").value;
-            var cp = document.getElementById("p2").value;
+            var n = document.getElementById("n1 ").value;
+            var e = document.getElementById("e1 ").value;
+            var p = document.getElementById("p1 ").value;
+            var cp = document.getElementById("p2 ").value;
             //Code for password validation  
             var letters = /^[A-Za-z]+$/;
             var email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
             //other validations required code  
             if (n == '' || e == '' || p == '' || cp == '') {
-                alert("Enter each details correctly");
+                alert("Enter each details correctly ");
             } else if (!letters.test(n)) {
                 alert('Name is incorrect must contain alphabets only');
             } else if (!email_val.test(e)) {
                 alert('Invalid email format please enter valid email id');
             } else if (p != cp) {
-                alert("Passwords not matching");
-            } else if (document.getElementById("p1").value.length > 12) {
-                alert("Password maximum length is 12");
-            } else if (document.getElementById("p1").value.length < 6) {
-                alert("Password minimum length is 6");
+                alert("Passwords not matching ");
+            } else if (document.getElementById("p1 ").value.length > 12) {
+                alert("Password maximum length is 12 ");
+            } else if (document.getElementById("p1 ").value.length < 6) {
+                alert("Password minimum length is 6 ");
             } else {
-                alert("Your account has been created successfully... Redirecting to JavaTpoint.com");
-                window.location = "https://www.javatpoint.com/";
+                alert("Your account has been created successfully... Redirecting to Hesekiel Nainggolan Blogspot ");
+                window.location = "https://nainggolanhesekiel.blogspot.com/ ";
             }
         }
     </script>
+
 </body>
 
 </html>

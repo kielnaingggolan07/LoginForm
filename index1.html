@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="split left">
+        <div class="centered">
+            <img src="img/logo.jpg" alt="Avatar 1">
+            <h2>WELCOME TO LEVIN</h2>
+        </div>
+    </div>
+    <div class="split right">
+        <div class="kotak">
+            <h3 align="center"> LOGIN LEVIN</h3>
+            <hr>
+            <from=l ogin_form " onsubmit="submit_form() " >
+        <h4 align='left' style="margin-left: 10px; margin-bottom: 5px; "> Levin Id </h4>
+        <input type="text " placeholder="Enter your Levin id " style="margin-left: 3px; border-radius: 5px; ">
+        <h4 align='left' style="margin-left: 10px; margin-bottom: 5px; "> Levin Password</h4>
+        <input type = "password " placeholder="Enter your password "style="margin-left: 3px; border-radius: 5px; "> <br> </br>
+        <button  type="submit " onclick="submit_form() " style="border-radius: 3px; margin-left: 3px; ">Login</button>
+        <button  type="button " onclick="create() " style="border-radius: 3px; margin-left: 3px; ">Singup</button>
+        <!-- <input type="submit " value="Login " >
+        <input type="button " value="SingUp " onclick="create() "/> -->
+        </form>
+
+        <script type="text/javascript ">
+            function submit_form() {
+                alert("Login Successfully ");
+            }
+
+            function create() {
+                window.location = "Singup.html ";
+            }
+        </script>
+
+        </div>
+        <div class="link ">
+                    <h4 style="color: black; " align="center " style="margin-bottom: 2px; "><strong>FOLLOW ME</strong></h4> 
+                    <a href="https://www.instagram.com/hesekiel.n/ " target="_blank " class="animate__animated animate__backInLeft ">Instagram</a>
+                     <a href="https://nainggolanhesekiel.blogspot.com/ " target="_blank " class="animate__animated animate__backInLeft ">Blog</a>
+        </div>
+        
+    </div>
+
+
+
+</body>
+
+</html>
